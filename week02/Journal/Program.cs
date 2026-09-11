@@ -1,3 +1,5 @@
+// Added a mood tracker field to each journal entry to save additional personal data
+
 using System;
 using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography.X509Certificates;
@@ -29,12 +31,16 @@ class Program
                 
                 string userResponse = Console.ReadLine();
 
+                Console.WriteLine("How are you feeling today? ");
+                string userMood = Console.ReadLine();
+
                 string currentDate = DateTime.Now.ToShortDateString();
                 
                 Entry newEntry = new Entry();
                 newEntry._date = currentDate;
                 newEntry._promptText = prompt;
                 newEntry._entryText = userResponse;
+                newEntry._mood = userMood;
 
                 theJournal.AddEntry(newEntry);
             }
