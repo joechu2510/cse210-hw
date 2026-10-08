@@ -1,0 +1,4 @@
+0
+SimpleGoal:Tomar agua,500ml por cada 3 horas,20,False
+EternalGoal:Orar,En la noche,50
+ChecklistGoal:Comer,3 veces al dia,10,100,3,0

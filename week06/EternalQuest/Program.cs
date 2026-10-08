@@ -1,9 +1,12 @@
+// Added an automatic leveling system based on total points.
+
 using System;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the EternalQuest Project.");
+        GoalManager manager = new GoalManager();
+        manager.Start();
     }
 }
